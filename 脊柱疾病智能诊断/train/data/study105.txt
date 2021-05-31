@@ -1,0 +1,11 @@
+281,354,{'disc': 'v3', 'identification': 'L5-S1'}
+267,309,{'disc': 'v2', 'identification': 'L4-L5'}
+268,259,{'disc': 'v3', 'identification': 'L3-L4', 'vertebra': ''}
+266,210,{'disc': 'v3', 'identification': 'L2-L3'}
+279,165,{'disc': 'v2', 'identification': 'L1-L2'}
+295,121,{'disc': 'v1', 'identification': 'T12-L1'}
+270,329,{'identification': 'L5', 'vertebra': 'v2'}
+264,285,{'disc': '', 'identification': 'L4', 'vertebra': 'v1'}
+268,237,{'identification': 'L3', 'vertebra': 'v2'}
+276,189,{'identification': 'L2', 'vertebra': 'v2'}
+286,145,{'identification': 'L1', 'vertebra': 'v2'}
