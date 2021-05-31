@@ -120,7 +120,7 @@ def define_model():
             # 三个全连接层
             self.fc1 = nn.Linear(64 * 3 * 3, 120)
             self.fc15 = nn.Linear(120, 44)
-            self.fc2 = nn.Linear(44, 2)      #最后输出为1x22的向量
+            self.fc2 = nn.Linear(44, 2)      #最后输出为1x2的向量
 
         def forward(self, x):
             #卷积层采用sigmoid作为激活函数，池化层无激活函数
