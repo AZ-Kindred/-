@@ -7,7 +7,7 @@ import numpy as np
 import linecache
 from skimage import io
 from skimage.transform import resize
-import time
+#import time
 ###############提取标注数据中的坐标，用1x22的向量表示（x1,y1,x2,y2,...,x11,y11）###########
 def getnum(file):
     Num = np.zeros((11, 2))
@@ -216,7 +216,7 @@ def test(x, y, net_path, Loss, Z):
 
 
 if __name__ == '__main__':
-    start = time.clock()
+    #start = time.clock()
     path = 'C:/Users/86181/Desktop/人工智能实验期中大作业/脊柱疾病智能诊断/'  #在不同机器上运行时，将path改成相应地址即可
     split = 'train/data'
     num = 149    #训练集样本数
@@ -232,5 +232,5 @@ if __name__ == '__main__':
     Net1 = train(X_train, Y_train, net, Loss, optimizer,Z_train,path)
     #进行测试
     test(X_test , Y_test, Net1, Loss, Z_test)
-    end = time.clock()
-    print('Running time: %s Seconds' % (end - start))
+    #end = time.clock()
+    #print('Running time: %s Seconds' % (end - start))
