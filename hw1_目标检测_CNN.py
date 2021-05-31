@@ -50,9 +50,9 @@ def getnum(file):
 ###################数据加载##########
 def get_data(path, split, num):                   #num为数据集中样本的个数
     print('start loading ' + split + ' data...')
-    X = np.zeros((num, 1, 224, 224), np.float)    #图片数据，将所有图片resize为224X224大小
-    Y = np.zeros((num, 22), np.float)             #坐标数据
-    Z = np.zeros((num, 2), np.float)              #每张图片的变化比例，用于将resize后得到的坐标变回原图中的坐标
+    X = np.zeros((num, 1, 224, 224))    #图片数据，将所有图片resize为224X224大小
+    Y = np.zeros((num, 22))             #坐标数据
+    Z = np.zeros((num, 2))              #每张图片的变化比例，用于将resize后得到的坐标变回原图中的坐标
     #如果之前已经加载过数据，则直接读取数据文件，节省时间
     if os.path.exists('X_Train1.npy') and os.path.exists('X_Test1.npy'):
         if split=='train/data':
